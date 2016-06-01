@@ -95,6 +95,8 @@ function fish_prompt
         segment white 333 " %% "
     end
 
+    segment_close
+
     if set -q VIRTUAL_ENV
         segment blue white " "(basename "$VIRTUAL_ENV")" "
     end
@@ -110,6 +112,4 @@ function fish_prompt
     if set -q DOCKER_MACHINE_NAME
         segment blue white " $DOCKER_MACHINE_NAME "
     end
-
-    segment_close
 end
