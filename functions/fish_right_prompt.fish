@@ -36,9 +36,4 @@ function fish_right_prompt
     end
 
     echo -sn (set_color $status_color) "$status_glyph" (set_color normal)
-    
-    if set -q VIRTUAL_ENV
-        segment blue white " "(basename "$VIRTUAL_ENV")" "
-    end
-    
 end
