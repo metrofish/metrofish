@@ -103,6 +103,5 @@ function fish_prompt
         segment red fff " "(basename "$RUBY_VERSION")" "
     end
 
-
     segment_close
 end
