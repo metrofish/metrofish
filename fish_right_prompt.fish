@@ -1,7 +1,7 @@
 function fish_right_prompt
     set -l status_copy $status
     set -l status_code $status_copy
-    set -l status_color 333
+    set -l status_color 555
     set -l status_glyph
     set -l duration_glyph
 
