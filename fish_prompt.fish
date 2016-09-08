@@ -102,6 +102,10 @@ function fish_prompt
     if set -q RUBY_VERSION
         segment red fff " "(basename "$RUBY_VERSION")" "
     end
+    
+    if set -q NVM_PATH
+        segment 80BD01 2F2F2F "⬢ "(string sub -s (math (string length "$HOME") + (string length "/.nvm/versions/node/v") + 1) -l (math (string length "$NVM_PATH") - (string length "$HOME") - (string length "/.nvm/versions/node/v") - (string length "/lib/node")) "$NVM_PATH")" "
+    end
 
     segment_close
 end
