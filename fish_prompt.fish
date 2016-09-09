@@ -103,7 +103,7 @@ function fish_prompt
         segment red fff " "(basename "$RUBY_VERSION")" "
     end
     
-    if type node ^ /dev/null > /dev/null
+    if type -f node ^ /dev/null > /dev/null
         segment 80BD01 2F2F2F "⬢ "(string sub -s 2 (node -v))" "
     end
 
