@@ -78,7 +78,7 @@ fisher metro
 ![hostinfo-jobs](https://cloud.githubusercontent.com/assets/8317250/15191845/7fdf8c5a-17f1-11e6-9f83-8a7300421802.png)
 ![hostinfo-root](https://cloud.githubusercontent.com/assets/8317250/15191719/d4ca4828-17f0-11e6-85cf-4aae34ae068f.png)
 
-* Node version (as soon as `node` is in your path, can slow startup when using [fisher nvm](https://github.com/fisherman/nvm) wrapper, add a default Node version to PATH to make it fast again)
+* Node version (as soon as `node` is in your path, using [nvm](https://github.com/fisherman/nvm) or whatever)
 ![nvm](https://cloud.githubusercontent.com/assets/214067/18353559/c0420472-75e2-11e6-8f38-a8be5af9e15b.png)
 
 ## Terminal Settings
