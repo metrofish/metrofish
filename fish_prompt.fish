@@ -95,11 +95,11 @@ function fish_prompt
         segment white 333 " %% "
     end
 
-    if set -q VIRTUAL_ENV
+    if [ "$theme_display_virtualenv" != 'no' ]; and set -q VIRTUAL_ENV
         segment yellow blue " "(basename "$VIRTUAL_ENV")" "
     end
 
-    if set -q RUBY_VERSION
+    if [ "$theme_display_ruby" != 'no' ]; and set -q RUBY_VERSION
         segment red fff " "(basename "$RUBY_VERSION")" "
     end
 
