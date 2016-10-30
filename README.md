@@ -14,6 +14,15 @@ With [fisherman]
 fisher metro
 ```
 
+### Configure
+
+You can add the following lines to your `fish` configuration to change how `metro` works:
+
+```fish
+set -g theme_display_ruby no        # Disables displaying the current ruby version
+set -g theme_display_virtualenv no  # Disables displaying the current virtualenv name
+```
+
 ## Features
 
 * Git
