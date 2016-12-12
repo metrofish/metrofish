@@ -5,6 +5,19 @@ function fish_prompt
     set -l base
     set -l base_color 888 161616
 
+    if test "$fish_key_bindings" = "fish_vi_key_bindings"
+      switch $fish_bind_mode
+        case default
+          segment brwhite red "[N]"
+        case insert
+          segment brwhite green "[I]"
+        case replace-one
+          segment brwhite green "[R]"
+        case visual
+          segment brwhite magenta "[V]"
+      end
+    end
+
     if test "$PWD" = ~
         set base "~"
 
