@@ -108,9 +108,9 @@ function fish_prompt
         case default
           segment white red "[N]"
         case insert
-          segment white green "[I]"
+          segment black green "[I]"
         case replace-one
-          segment white blue "[R]"
+          segment yellow blue "[R]"
         case visual
           segment white magenta "[V]"
       end
