@@ -103,5 +103,18 @@ function fish_prompt
         segment red fff " "(basename "$RUBY_VERSION")" "
     end
 
+    if test "$fish_key_bindings" = "fish_vi_key_bindings"
+      switch $fish_bind_mode
+        case default
+          segment white red "[N]"
+        case insert
+          segment black green "[I]"
+        case replace-one
+          segment yellow blue "[R]"
+        case visual
+          segment white magenta "[V]"
+      end
+    end
+
     segment_close
 end
