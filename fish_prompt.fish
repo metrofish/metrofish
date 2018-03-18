@@ -3,7 +3,7 @@ function fish_prompt
     set -l pwd_info (pwd_info "/")
     set -l dir
     set -l base
-    set -l base_color 888 161616
+    set -q base_color; or set -l base_color 888 161616
 
     if test "$PWD" = ~
         set base "~"
