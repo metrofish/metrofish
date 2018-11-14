@@ -11,7 +11,7 @@
 With [fisherman]
 
 ```fish
-fisher metro
+fisher add jorgebucaran/fish-metro
 ```
 
 ### Configure
