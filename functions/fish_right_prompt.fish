@@ -25,7 +25,7 @@ function fish_right_prompt
             set status_glyph ┃
         end
 
-        set -l duration (echo $CMD_DURATION | humanize_duration)
+        set -l duration (_metro_duration $CMD_DURATION)
         echo -sn (set_color $status_color) " ($duration) $duration_glyph" (set_color normal)
 
     else
